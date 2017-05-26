@@ -1,11 +1,11 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
     <?php if(!$page): ?>
-        <p> No page found, sorry. </p>
+        <p> Przepraszamy, nie ma stron do wyświetlenia. </p>
     <?php else: ?>
-        <h2><?php echo e($page['title']); ?></h2>
+        <h2><?php echo '<header class="wrapper__header">' . e($page['title']) . '</header>'; ?></h2>
 
-        <?php echo e($page['body']); ?>
+        <?php echo '<div class="wrapper__post">' . e($page['body']) . '</div>'; ?>
 
         <p class="faded">
             Created on <?php echo $page['created']->format('jS M Y') ?>

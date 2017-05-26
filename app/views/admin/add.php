@@ -2,7 +2,7 @@
 
     <h2>Add page</h2>
 
-    <form action="<?php echo BASE_URL; ?>/admin/add.php" method="POST" autocomplete="off">
+    <form class="form" action="<?php echo BASE_URL; ?>/admin/add.php" method="POST" autocomplete="off">
         <label for="title">
             Title
             <input type="text" name="title" id="title">

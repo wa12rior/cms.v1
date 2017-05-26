@@ -1,7 +1,7 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
     <?php if (empty($pages)): ?>
-        <p>No pages at the moment.</p>
+        <p>Przepraszamy, nie ma stron do wyświetlenia.</p>
     <?php else: ?>
         <table>
             <thead>
@@ -27,6 +27,6 @@
         </table>
     <?php endif; ?>
 
-    <a href="<?php echo BASE_URL; ?>/admin/add.php">Add page</a>
+    <a href="<?php echo BASE_URL; ?>/admin/add.php">Dodaj</a>
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

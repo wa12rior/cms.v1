@@ -2,6 +2,8 @@
 
 require 'app/start.php';
 
+date_default_timezone_set('Europe/Warsaw');
+
 if (empty($_GET['page'])) {
     $page = false;
 } else {
